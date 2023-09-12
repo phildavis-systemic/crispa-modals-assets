@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tailwind Town :D</title>
+    <link rel="stylesheet" href="../output.css">
+  </head>
+<body>
+  <div id="modal-host-container" class="overflow-hidden">
+    <div class="relative inset-0 h-full w-full">
+      <div class="modal-dialogue-and-modal-backdrop-container" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div>
+          <div class="modal-backdrop"></div>
+  
+          
+          <div class="text-center mt-4 mb-0">
+            <p class="font-bold text-xl mb-4 text-red-700">Australian Birth Certificate Extended Help Modals</p>
+            <p class="font-bold">Notes to Devs</p>
+            <p>Ideally the modal height for all states will be the height of the tallest modal (so it does not change size as you select a State or Territory).</p>
+          </div>
+  
+          <!-- Initial State -->
+          <div class="text-center mt-8 mb-0 font-bold text-primary-600 text-lg underline"><p>Family Name Modal - Initial State</p></div>
+  
+          <div class="modal-dialogue-container">
+            <div class="modal-dialogue">
+              <!-- base: modal-dialogue-background my-0 w-full sm:max-w-lg sm:my-4  -->
+              <!-- lg: modal-dialogue-background my-0 w-full sm:max-w-3xl sm:my-4  -->
+              <!-- xl: modal-dialogue-background my-0 w-full sm:max-w-5xl sm:my-4  -->
+              <!-- fs: modal-dialogue-background m-0 sm:m-4  -->
+              <div class="modal-dialogue-background my-0 w-full sm:my-4 sm:max-w-lg">
+                <!-- Start of close button -->
+                <div class="absolute right-0 top-0 hidden pr-4 pt-4 sm:block">
+                  <button type="button" class="btn-close">
+                    <!-- APS icon goes here -->
+                  </button>
+                </div>
+                <div>
+                  <div id="content">
+                    <aps-modal>
+                      <div class="sm:flex sm:items-start">
+                        <div>
+                          <aps-modal-icon class=""
+                            ><span class="avatar-2xl avatar-rounded avatar-icon avatar-extended-help sm:avatar-xl mx-auto sm:mx-0"
+                              ><aps-icon
+                                ><svg fill="none" width="100%" height="100%" viewBox="0 0 512 512"><path shape-rendering="geometricPrecision" fill="#10809B" d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm73.8 133.3c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L248 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24V250.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1H190.6c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM192 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"></path></svg></aps-icon></span
+                          ></aps-modal-icon>
+                        </div>
+                        <!-- Start text content -->
+                        <div class="mt-3 w-full text-center sm:ml-4 sm:mt-0 sm:text-left">
+                          <div class="prose max-w-full leading-6">
+                            <h3>Family Name Help</h3>
+                          </div>
+                          <div class="modal-content flex flex-row gap-2">
+                            <div class="basis-1/2 text-left">Select the State/Territory that registered the birth:</div>
+                            <div class = "input-group basis-1/2">
+                             <select name="" type="" placeholder="" class="text-sm rounded-md" aria-label="Select a State or Territory">
+                               <option value=""></option>
+                               <option _ngcontent-aui-c70="" value="WA">Western Australia</option>
+                               <option _ngcontent-aui-c70="" value="ACT">Australian Capital Territory</option>
+                               <option _ngcontent-aui-c70="" value="NSW">New South Wales</option>
+                               <option _ngcontent-aui-c70="" value="NT">Northern Territory</option>
+                               <option _ngcontent-aui-c70="" value="QLD">Queensland</option>
+                               <option _ngcontent-aui-c70="" value="SA">South Australia</option>
+                               <option _ngcontent-aui-c70="" value="TAS">Tasmania</option>
+                               <option _ngcontent-aui-c70="" value="VIC">Victoria</option>
+                             </select>
+                           </div>
+                          </div>
+                          <!-- fancy divider - I love it
+                          <hr class="my-4 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-border-600 to-transparent opacity-25" />
+                          -->
+  
+                          <div class="modal-content"></div>
+                        </div>
+                        <!-- End text content -->
+                      </div>
+  
+                      <aps-modal-footer>
+                        <div class="modal-button-container">
+                          <button type="button" class="btn-primary btn-lg sm:btn-base w-full min-w-[4rem] sm:ml-3 sm:w-auto">Close</button>
+                        </div>
+                      </aps-modal-footer>
+                    </aps-modal>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- WA Selected -->
+          <div class="text-center mt-8 mb-0 font-bold text-primary-600 text-lg underline"><p>Family Name Modal - WA Selected</p></div>
+  
+          <div class="modal-dialogue-container">
+            <div class="modal-dialogue">
+              <!-- base: modal-dialogue-background my-0 w-full sm:max-w-lg sm:my-4  -->
+              <!-- lg: modal-dialogue-background my-0 w-full sm:max-w-3xl sm:my-4  -->
+              <!-- xl: modal-dialogue-background my-0 w-full sm:max-w-5xl sm:my-4  -->
+              <!-- fs: modal-dialogue-background m-0 sm:m-4  -->
+              <div class="modal-dialogue-background my-0 w-full sm:my-4 sm:max-w-lg">
+                <!-- Start of close button -->
+                <div class="absolute right-0 top-0 hidden pr-4 pt-4 sm:block">
+                  <button type="button" class="btn-close">
+                    <!-- APS icon goes here -->
+                  </button>
+                </div>
+                <div>
+                  <div id="content">
+                    <aps-modal>
+                      <div class="sm:flex sm:items-start">
+                        <div>
+                          <aps-modal-icon class=""
+                            ><span class="avatar-2xl avatar-rounded avatar-icon avatar-extended-help sm:avatar-xl mx-auto sm:mx-0"
+                              ><aps-icon
+                                ><svg fill="none" width="100%" height="100%" viewBox="0 0 512 512"><path shape-rendering="geometricPrecision" fill="#10809B" d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm73.8 133.3c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L248 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24V250.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1H190.6c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM192 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"></path></svg></aps-icon></span
+                          ></aps-modal-icon>
+                        </div>
+                        <!-- Start text content -->
+                        <div class="mt-3 w-full text-center sm:ml-4 sm:mt-0 sm:text-left">
+                          <div class="prose max-w-full leading-6">
+                            <h3>Family Name Help</h3>
+                          </div>
+                          <div class="modal-content flex flex-row gap-2">
+                            <div class="basis-1/2 text-left">Select the State/Territory that registered the birth:</div>
+                            <div class = "input-group basis-1/2">
+                             <select name="" type="" placeholder="" class="text-sm rounded-md" aria-label="Select a State or Territory">
+                               <option value=""></option>
+                               <option _ngcontent-aui-c70="" value="WA" selected>Western Australia</option>
+                               <option _ngcontent-aui-c70="" value="ACT">Australian Capital Territory</option>
+                               <option _ngcontent-aui-c70="" value="NSW">New South Wales</option>
+                               <option _ngcontent-aui-c70="" value="NT">Northern Territory</option>
+                               <option _ngcontent-aui-c70="" value="QLD">Queensland</option>
+                               <option _ngcontent-aui-c70="" value="SA">South Australia</option>
+                               <option _ngcontent-aui-c70="" value="TAS">Tasmania</option>
+                               <option _ngcontent-aui-c70="" value="VIC">Victoria</option>
+                             </select>
+                           </div>
+                          </div>
+                          <!-- fancy divider - I love it
+                          <hr class="my-4 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-border-600 to-transparent opacity-25" />
+                          -->
+  
+                          <hr class="border-t-px my-4 h-px border-t-border-200 bg-transparent opacity-100" />
+  
+                          <div class="modal-content">
+                            <p>You must enter your family name exactly as shown on your certificate.</p>
+                          </div>
+                          <div class="modal-content">
+                            <h4 class="mt-1">Names that use Accented Letters</h4>
+                            <p>If your names are shown using accented letters (e.g. ö, è, û) you must enter the non-accented version of the letter (e.g. o, e, u, etc.).</p>
+                          </div>
+                          <div class="modal-content">
+                            <h4 class="mt-1">Applicants with Single Name Certificates</h4>
+                            <p>If your certificate only shows a single name (i.e. there are no given names or no family name), the single name can be entered in either the Given Names or Family Name fields. Leave the other field blank.</p>
+                          </div>
+                        </div>
+                        <!-- End text content -->
+                      </div>
+  
+                      <aps-modal-footer>
+                        <div class="modal-button-container">
+                          <button type="button" class="btn-primary btn-lg sm:btn-base w-full min-w-[4rem] sm:ml-3 sm:w-auto">Close</button>
+                        </div>
+                      </aps-modal-footer>
+                    </aps-modal>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ACT, NSW, NT, QLD, SA or TAS Selected -->
+          <div class="text-center mt-8 mb-0 font-bold text-primary-600 text-lg underline"><p>Family Name Modal - ACT, NSW, NT, QLD, SA or TAS Selected</p></div>
+  
+          <div class="modal-dialogue-container">
+            <div class="modal-dialogue">
+              <!-- base: modal-dialogue-background my-0 w-full sm:max-w-lg sm:my-4  -->
+              <!-- lg: modal-dialogue-background my-0 w-full sm:max-w-3xl sm:my-4  -->
+              <!-- xl: modal-dialogue-background my-0 w-full sm:max-w-5xl sm:my-4  -->
+              <!-- fs: modal-dialogue-background m-0 sm:m-4  -->
+              <div class="modal-dialogue-background my-0 w-full sm:my-4 sm:max-w-lg">
+                <!-- Start of close button -->
+                <div class="absolute right-0 top-0 hidden pr-4 pt-4 sm:block">
+                  <button type="button" class="btn-close">
+                    <!-- APS icon goes here -->
+                  </button>
+                </div>
+                <div>
+                  <div id="content">
+                    <aps-modal>
+                      <div class="sm:flex sm:items-start">
+                        <div>
+                          <aps-modal-icon class=""
+                            ><span class="avatar-2xl avatar-rounded avatar-icon avatar-extended-help sm:avatar-xl mx-auto sm:mx-0"
+                              ><aps-icon
+                                ><svg fill="none" width="100%" height="100%" viewBox="0 0 512 512"><path shape-rendering="geometricPrecision" fill="#10809B" d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm73.8 133.3c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L248 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24V250.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1H190.6c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM192 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"></path></svg></aps-icon></span
+                          ></aps-modal-icon>
+                        </div>
+                        <!-- Start text content -->
+                        <div class="mt-3 w-full text-center sm:ml-4 sm:mt-0 sm:text-left">
+                          <div class="prose max-w-full leading-6">
+                            <h3>Family Name Help</h3>
+                          </div>
+                          <div class="modal-content flex flex-row gap-2">
+                            <div class="basis-1/2 text-left">Select the State/Territory that registered the birth:</div>
+                            <div class = "input-group basis-1/2">
+                             <select name="" type="" placeholder="" class="text-sm rounded-md" aria-label="Select a State or Territory">
+                               <option value=""></option>
+                               <option _ngcontent-aui-c70="" value="WA">Western Australia</option>
+                               <option _ngcontent-aui-c70="" value="ACT" selected>Australian Capital Territory</option>
+                               <option _ngcontent-aui-c70="" value="NSW">New South Wales</option>
+                               <option _ngcontent-aui-c70="" value="NT">Northern Territory</option>
+                               <option _ngcontent-aui-c70="" value="QLD">Queensland</option>
+                               <option _ngcontent-aui-c70="" value="SA">South Australia</option>
+                               <option _ngcontent-aui-c70="" value="TAS">Tasmania</option>
+                               <option _ngcontent-aui-c70="" value="VIC">Victoria</option>
+                             </select>
+                           </div>
+                          </div>
+                          <!-- fancy divider - I love it
+                          <hr class="my-4 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-border-600 to-transparent opacity-25" />
+                          -->
+  
+                          <hr class="border-t-px my-4 h-px border-t-border-200 bg-transparent opacity-100" />
+  
+                          <div class="modal-content">
+                            <p>You must enter your family name exactly as shown on your certificate.</p>
+                          </div>
+                          <div class="modal-content">
+                            <h4 class="mt-1">Names that use Accented Letters</h4>
+                            <p>If your names are shown using accented letters (e.g. ö, è, û) you must enter the non-accented version of the letter (e.g. o, e, u, etc.).</p>
+                          </div>
+                          <div class="modal-content">
+                            <h4 class="mt-1">Applicants with Single Name Certificates</h4>
+                            <p>If your certificate only shows a single name (i.e. there are no given names or no family name), the single name must be entered in the appropriate field. Leave the other field blank.</p>
+                          </div>
+                        </div>
+                        <!-- End text content -->
+                      </div>
+  
+                      <aps-modal-footer>
+                        <div class="modal-button-container">
+                          <button type="button" class="btn-primary btn-lg sm:btn-base w-full min-w-[4rem] sm:ml-3 sm:w-auto">Close</button>
+                        </div>
+                      </aps-modal-footer>
+                    </aps-modal>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- VIC Selected -->
+          <div class="text-center mt-8 mb-0 font-bold text-primary-600 text-lg underline"><p>Family Name Modal - VIC Selected</p></div>
+  
+          <div class="modal-dialogue-container">
+            <div class="modal-dialogue">
+              <!-- base: modal-dialogue-background my-0 w-full sm:max-w-lg sm:my-4  -->
+              <!-- lg: modal-dialogue-background my-0 w-full sm:max-w-3xl sm:my-4  -->
+              <!-- xl: modal-dialogue-background my-0 w-full sm:max-w-5xl sm:my-4  -->
+              <!-- fs: modal-dialogue-background m-0 sm:m-4  -->
+              <div class="modal-dialogue-background my-0 w-full sm:my-4 sm:max-w-lg">
+                <!-- Start of close button -->
+                <div class="absolute right-0 top-0 hidden pr-4 pt-4 sm:block">
+                  <button type="button" class="btn-close">
+                    <!-- APS icon goes here -->
+                  </button>
+                </div>
+                <div>
+                  <div id="content">
+                    <aps-modal>
+                      <div class="sm:flex sm:items-start">
+                        <div>
+                          <aps-modal-icon class=""
+                            ><span class="avatar-2xl avatar-rounded avatar-icon avatar-extended-help sm:avatar-xl mx-auto sm:mx-0"
+                              ><aps-icon
+                                ><svg fill="none" width="100%" height="100%" viewBox="0 0 512 512"><path shape-rendering="geometricPrecision" fill="#10809B" d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm73.8 133.3c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L248 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24V250.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1H190.6c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM192 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"></path></svg></aps-icon></span
+                          ></aps-modal-icon>
+                        </div>
+                        <!-- Start text content -->
+                        <div class="mt-3 w-full text-center sm:ml-4 sm:mt-0 sm:text-left">
+                          <div class="prose max-w-full leading-6">
+                            <h3>Family Name Help</h3>
+                          </div>
+                          <div class="modal-content flex flex-row gap-2">
+                            <div class="basis-1/2 text-left">Select the State/Territory that registered the birth:</div>
+                            <div class = "input-group basis-1/2">
+                             <select name="" type="" placeholder="" class="text-sm rounded-md" aria-label="Select a State or Territory">
+                               <option value=""></option>
+                               <option _ngcontent-aui-c70="" value="WA">Western Australia</option>
+                               <option _ngcontent-aui-c70="" value="ACT">Australian Capital Territory</option>
+                               <option _ngcontent-aui-c70="" value="NSW">New South Wales</option>
+                               <option _ngcontent-aui-c70="" value="NT">Northern Territory</option>
+                               <option _ngcontent-aui-c70="" value="QLD">Queensland</option>
+                               <option _ngcontent-aui-c70="" value="SA">South Australia</option>
+                               <option _ngcontent-aui-c70="" value="TAS">Tasmania</option>
+                               <option _ngcontent-aui-c70="" value="VIC" selected>Victoria</option>
+                             </select>
+                           </div>
+                          </div>
+                          <!-- fancy divider - I love it
+                          <hr class="my-4 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-border-600 to-transparent opacity-25" />
+                          -->
+  
+                          <hr class="border-t-px my-4 h-px border-t-border-200 bg-transparent opacity-100" />
+  
+                          <div class="modal-content">
+                            <p>You must enter your family name exactly as shown on your certificate.</p>
+                          </div>
+                          <div class="modal-content">
+                            <h4 class="mt-1">Names that use Accented Letters</h4>
+                            <p>If your names are shown using accented letters (e.g. ö, è, û) you must enter the non-accented version of the letter (e.g. o, e, u, etc.).</p>
+                          </div>
+                          <div class="modal-content">
+                            <h4 class="mt-1">Applicants with Single Name Certificates</h4>
+                            <p>If there is no family name shown on your certificate, you must enter exactly what is shown, as follows:</p>
+                            <ul class="text-left">
+                              <li>If the certificate is blank, leave this field blank (empty).</li>
+                              <li>If a hyphen is shown, enter a hyphen in this field.</li>
+                              <li>If the phrase <em>No Registered Surname</em> is shown, you must enter <strong>No Registered Surname</ in this field.</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!-- End text content -->
+                      </div>
+  
+                      <aps-modal-footer>
+                        <div class="modal-button-container">
+                          <button type="button" class="btn-primary btn-lg sm:btn-base w-full min-w-[4rem] sm:ml-3 sm:w-auto">Close</button>
+                        </div>
+                      </aps-modal-footer>
+                    </aps-modal>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
+  
