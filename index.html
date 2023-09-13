@@ -5,174 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tailwind Town :D</title>
-    <link rel="stylesheet" href="../output.css">
+    <link rel="stylesheet" href="output.css">
   </head>
 <body>
-  <div id="modal-host-container" class="overflow-hidden">
-    <div class="relative inset-0 h-full w-full">
-      <div class="modal-dialogue-and-modal-backdrop-container" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-        <div>
-          <div class="modal-backdrop"></div>
-  
-          <div class="mb-0 mt-4 text-center">
-            <p class="mb-4 text-xl font-bold text-red-700">Australian Citizenship Certificate Extended Help Modal</p>
-          </div>
-  
-          <div class="mb-0 mt-8 text-center text-lg font-bold text-primary-600 underline"><p>Document Number Help Modal</p></div>
-  
-          <div class="modal-dialogue-container">
-            <div class="modal-dialogue">
-              <!-- base: modal-dialogue-background my-0 w-full sm:max-w-lg sm:my-4  -->
-              <!-- lg: modal-dialogue-background my-0 w-full sm:max-w-3xl sm:my-4  -->
-              <!-- xl: modal-dialogue-background my-0 w-full sm:max-w-5xl sm:my-4  -->
-              <!-- fs: modal-dialogue-background m-0 sm:m-4  -->
-              <div class="modal-dialogue-background my-0 w-full sm:my-4 sm:max-w-lg">
-                <!-- Start of close button -->
-                <div class="absolute right-0 top-0 hidden pr-4 pt-4 sm:block">
-                  <button type="button" class="btn-close">
-                    <!-- APS icon goes here -->
-                  </button>
-                </div>
-                <div>
-                  <div id="content">
-                    <aps-modal>
-                      <div class="sm:flex sm:items-start">
-                        <div>
-                          <aps-modal-icon class="">
-                            <span class="avatar-2xl avatar-rounded avatar-icon avatar-extended-help sm:avatar-xl mx-auto sm:mx-0">
-                              <aps-icon>
-                                <svg fill="none" width="100%" height="100%" viewBox="0 0 512 512"><path shape-rendering="geometricPrecision" fill="#10809B" d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm73.8 133.3c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L248 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24V250.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1H190.6c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM192 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"></path></svg>
-                              </aps-icon>
-                            </span>
-                          </aps-modal-icon>
-                        </div>
-                        <!-- Start text content -->
-                        <div class="mt-3 w-full text-center sm:ml-4 sm:mt-0 sm:text-left">
-                          <div class="prose max-w-full leading-6">
-                            <h3>Identifying and Entering the Document Number</h3>
-                          </div>
-  
-                          <div class="modal-content">
-                            <p>Before entering your document number, <span class="font-semibold">you have to remove</span>:</p>
-                            <ul class="text-left">
-                                <li>any special characters such as brackets, parentheses, hyphens, dots or spaces; and</li>
-                                <li> the words 'No:', 'Vol',  'Page No', 'Client Id:' and 'Evidence No:' if they appear.</li>
-                            </ul>
-                            <p><span class="font-semibold">Important</span>: Depending on the document's type and age, the number may be located <span class="font-semibold">on the rear of the document</span>.</p>
+<div id="modal-host-container" class="overflow-hidden">
+  <div class="relative inset-0 h-full w-full">
+    <div class="modal-dialogue-and-modal-backdrop-container" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+      <div>
+        <div class="modal-backdrop"></div>
 
-                          </div>
-                          <div class="modal-content text-left mt-4">
-                            <h4 class="mt-1">Document Number Examples</h4>
-                            <p>These following <span class="italic">are examples only</span> - you must enter the number <span class="font-semibold">from your document</span>.</p>
-                          </div>
+        
+        <div class="text-center mt-4 mb-0">
+          <p class="font-bold text-xl mb-4 text-red-700">CRISPA Extended Help Modals</p>
+        </div>
 
-                          <table class="border-collapse w-full border border-border-400 text-sm table-auto mt-2">
-                            <caption class="caption-bottom pt-2 italic text-xs">
-                              How Document Numbers may appear and how to enter them
-                            </caption>
-                              <thead>
-                                <tr>
-                                  <th class="border bg-background-200 border-border-300 font-medium p-1 text-content-900 text-sm">If the number looks like this...</th>
-                                  <th class="border bg-background-200 border-border-300 font-medium p-1 text-content-900 text-sm">Enter it like this…</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td class="border border-border-300 p-1 text-content-700">ACC (1) 23456</td>
-                                  <td class="border border-border-300 p-1 text-content-700">ACC123456</td>
-                                </tr>
-                                <tr>
-                                  <td class="border border-border-300 p-1 text-content-700 bg-background-50">ACC  1234567</td>
-                                  <td class="border border-border-300 p-1 text-content-700 bg-background-50">ACC1234567</td>
-                                </tr>
-                                <tr>
-                                  <td class="border border-border-300 p-1 text-content-700">CAS-123456</td>
-                                  <td class="border border-border-300 p-1 text-content-700">CAS123456</td>
-                                </tr>
-                                <tr>
-                                  <td class="border border-border-300 p-1 text-content-700 bg-background-50">Evidence No: 123456789</td>
-                                  <td class="border border-border-300 p-1 text-content-700 bg-background-50">123456789</td>
-                                </tr>
-                                <tr>
-                                  <td class="border border-border-300 p-1 text-content-700">Client Id: 12345678910</td>
-                                  <td class="border border-border-300 p-1 text-content-700">12345678910</td>
-                                </tr>
-                                <tr>
-                                  <td class="border border-border-300 p-1 text-content-700 bg-background-50">CA (2) No 123456</td>
-                                  <td class="border border-border-300 p-1 text-content-700 bg-background-50">CA2123456</td>
-                                </tr>
-                                <tr>
-                                  <td class="border border-border-300 p-1 text-content-700">CA (M) No 123456</td>
-                                  <td class="border border-border-300 p-1 text-content-700">CAM123456</td>
-                                </tr>
-                                <tr>
-                                  <td class="border border-border-300 p-1 text-content-700 bg-background-50">Vol. C (1) Page No 1234 </td>
-                                  <td class="border border-border-300 p-1 text-content-700 bg-background-50">C11234</td>
-                                </tr>
-                              </tbody>
-                          </table>
-
-                          <hr class="border-t-px my-4 h-px border-t-border-200 bg-transparent opacity-100" />
-
-
-                          <div class="modal-content text-left mt-4">
-                            <h4 class="mt-1">Combining Two Numbers</h4>
-                            <p>In some cases you will have to combine two numbers from your document, and separate them with a slash.</p>
-                          </div>
-
-                        <div class="bg-background-100 p-4 rounded-xl shadow-md">
-                          <p class="text-sm italic"><span class="font-medium">Example 1.</span> If the numbers on your document appear like this...</p>
-                            <div class="w-full mb-4">
-                              <figure class="max-w-md mt-4 mx-auto">
-                                <img class="h-auto max-w-full border border-border-400" src="https://raw.githubusercontent.com/phildavis-systemic/crispa-modals-assets/main/assets/imgs/application/identity/help/acc-dn-1.jpg" alt="Example document extract showing two separate numbers (182 and 109) that must be combined, separated by a slash, before entering as 182/109">
-                              </figure>
-                            </div>
-                            <hr class="border-t-px my-4 h-px border-t-border-300 bg-transparent opacity-100" />
-                            <p class="text-sm italic">You should enter them like this...</p>
-                            <div class="w-full">
-                              <figure class="max-w-xs mt-4 mx-auto">
-                                <img class="h-auto max-w-full" src="https://raw.githubusercontent.com/phildavis-systemic/crispa-modals-assets/main/assets/imgs/application/identity/help/acc-dn-1b.png" alt="Example showing correct number format (first number/second number) for entering into the form field.">
-                              </figure>
-                            </div>
-                        </div>
-
-                        <div class="bg-background-100 p-4 rounded-xl shadow-md mt-4">
-                          <p class="text-sm italic"><span class="font-medium">Example 2.</span> If the numbers on your document appear like this...</p> 
-                            <div class="w-full mb-4">
-                              <figure class="max-w-md mt-4 mx-auto">
-                                <img class="h-auto max-w-full border border-border-400" src="https://raw.githubusercontent.com/phildavis-systemic/crispa-modals-assets/main/assets/imgs/application/identity/help/acc-dn-2.jpg" alt="Example document extract showing two separate numbers (85 and 228) that must be combined, separated by a slash, before entering as 85/228">
-                              </figure>
-                            </div>
-                            <hr class="border-t-px my-4 h-px border-t-border-300 bg-transparent opacity-100" />
-                            <p class="text-sm italic">You should enter them like this...</p>
-                            <div class="w-full">
-                              <figure class="max-w-xs mt-4 mx-auto">
-                                <img class="h-auto max-w-full " src="https://raw.githubusercontent.com/phildavis-systemic/crispa-modals-assets/main/assets/imgs/application/identity/help/acc-dn-2b.png" alt="Example showing correct number format (first number/second number) for entering into the form field.">
-                              </figure>
-                            </div>
-                        </div>
-
+        <!-- Initial State -->
+        <div class="modal-dialogue-container">
+          <div class="modal-dialogue">
+            <!-- base: modal-dialogue-background my-0 w-full sm:max-w-lg sm:my-4  -->
+            <!-- lg: modal-dialogue-background my-0 w-full sm:max-w-3xl sm:my-4  -->
+            <!-- xl: modal-dialogue-background my-0 w-full sm:max-w-5xl sm:my-4  -->
+            <!-- fs: modal-dialogue-background m-0 sm:m-4  -->
+            <div class="modal-dialogue-background my-0 w-full sm:my-4 sm:max-w-lg">
+              <!-- Start of close button -->
+              <div class="absolute right-0 top-0 hidden pr-4 pt-4 sm:block">
+                <button type="button" class="btn-close">
+                  <!-- APS icon goes here -->
+                </button>
+              </div>
+              <div>
+                <div id="content">
+                  <aps-modal>
+                    <div class="sm:flex sm:items-start">
+                      <div>
+                        <aps-modal-icon class=""
+                          ><span class="avatar-2xl avatar-rounded avatar-icon avatar-extended-help sm:avatar-xl mx-auto sm:mx-0"
+                            ><aps-icon
+                              ><svg fill="none" width="100%" height="100%" viewBox="0 0 512 512"><path shape-rendering="geometricPrecision" fill="#10809B" d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm73.8 133.3c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L248 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24V250.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1H190.6c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM192 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"></path></svg></aps-icon></span
+                        ></aps-modal-icon>
                       </div>
-                        <!-- End text content -->
-                      </div>
-  
-                      <aps-modal-footer>
-                        <div class="modal-button-container">
-                          <button type="button" class="btn-primary btn-lg sm:btn-base w-full min-w-[4rem] sm:ml-3 sm:w-auto">Close</button>
+                      <!-- Start text content -->
+                      <div class="mt-3 w-full text-center sm:ml-4 sm:mt-0 sm:text-left">
+                        <div class="prose max-w-full leading-6">
+                          <h3>Index of CRISPA Extended Help Modals</h3>
                         </div>
-                      </aps-modal-footer>
-                    </aps-modal>
-                  </div>
+                        <hr class="my-4 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-border-600 to-transparent opacity-25" />
+                        <div class="modal-content">
+                          <h4 class="mt-1">Australian Birth Certificate</h4>
+                          <ul class="text-left">
+                            <li><a href="./abc-gn-help.html" class="text-primary-600 underline">Given Names</a></li>
+                            <li><a href="./abc-fn-help.html" class="text-primary-600 underline">Family Name</a></li>
+                            <li><a href="./abc-cn-help.html" class="text-primary-600 underline">Certificate Number</a></li>
+                            <li><a href="./abc-rn-help.html" class="text-primary-600 underline">Registration Number</a></li>
+                          </ul>
+                        </div>
+
+                        <div class="modal-content">
+                          <h4 class="mt-1">Australian Driver's Licence</h4>
+                          <ul class="text-left">
+                            <li><a href="./adl-help.html" class="text-primary-600 underline">Card Number</a></li>
+                          </ul>
+                        </div>
+
+                        <div class="modal-content">
+                          <h4 class="mt-1">Australian Visa</h4>
+                          <ul class="text-left">
+                            <li><a href="./av-gn-and-fm-help.html" class="text-primary-600 underline">Given and Family Names</a></li>
+                          </ul>
+                        </div>
+
+                        <div class="modal-content">
+                          <h4 class="mt-1">Australian Citizenship Certificate</h4>
+                          <ul class="text-left">
+                            <li><a href="./acc-dn-help.html" class="text-primary-600 underline">Document Number</a></li>
+                          </ul>
+                        </div>
+                      <!-- End text content -->
+                    </div>
+                    <aps-modal-footer>
+                      <!-- <div class="modal-button-container">
+                        <button type="button" class="btn-primary btn-lg sm:btn-base w-full min-w-[4rem] sm:ml-3 sm:w-auto">Close</button>
+                      </div> -->
+                    </aps-modal-footer>
+                  </aps-modal>
                 </div>
               </div>
             </div>
           </div>
- 
         </div>
+        
       </div>
     </div>
   </div>
-  
+</div>
 </body>
 </html>
-  
